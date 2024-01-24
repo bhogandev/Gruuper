@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.110.50" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="System.Diagnostics.EventLog" Version="5.0.0" />
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BibleVerse.DALV2\BibleVerse.DALV2.csproj" />
+    <ProjectReference Include="..\BibleVerse.Events\BibleVerse.Events.csproj" />
+    <ProjectReference Include="..\BVCommon\BVCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="AWSRepositories %28copy%29\" />
+    <None Remove="FireSharp" />
+    <None Remove="FirebaseStorage.net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FirebaseRepositories\" />
+  </ItemGroup>
+</Project>

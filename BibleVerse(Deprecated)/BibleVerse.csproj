@@ -1,0 +1,177 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="3.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="React.AspNet" Version="5.2.4" />
+    <PackageReference Include="React.Core" Version="5.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BibleVerse.DTO\BibleVerse.DTO.csproj" />
+    <ProjectReference Include="..\BibleVerse.Events\BibleVerse.Events.csproj" />
+    <ProjectReference Include="..\BVCommon\BVCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Shared\Helper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="**/*" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Register\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Register.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Login.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Register.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\ConfirmEmail.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Login.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Account.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Register.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\About.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\ConfirmEmail.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Account.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Login.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Register.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\BBV\Account.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Login.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Register.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+  </ItemGroup>
+</Project>

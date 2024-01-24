@@ -1,0 +1,14 @@
+{
+  "name": "bibleverseui",
+  "version": "1.0.0",
+  "description": "gruuperapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reactstrap-date-picker": "^0.0.12"
+  }
+}
